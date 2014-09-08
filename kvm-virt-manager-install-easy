@@ -1,0 +1,8 @@
+#Install from netinstall ISO with this URL:   centos.sonn.com/7.0.1406/os/x86_64/
+yum install -y xorg-x11-server-Xorg.x86_64 xorg-x11-drv-ati.x86_64 xorg-x11-drv-keyboard.x86_64 xorg-x11-drv-mouse.x86_64 xorg-x11-xinit.x86_64 xorg-x11-drv-vmouse.x86_64 lynx
+yum groupinstall "GNOME Desktop" "Graphical Admnistration Tools"
+yum upgrade
+yum install -y virt-manager
+
+# get gcc and htop etc. for compiling up tcl 8.6.2 etc.
+yum install -y gcc make m4 htop unzip xpdf http://pkgs.repoforge.org/htop/?C=M;O=A 
